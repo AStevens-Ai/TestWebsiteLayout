@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="carousel.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!--Section One Start  -->
@@ -18,9 +20,9 @@
         <!--right header  -->
         <div class="rightHeader">
           <ul>
-            <li><a class="subText" href="/">header link one</a></li>
-            <li><a class="subText" href="/">header link two</a></li>
-            <li><a class="subText" href="/">header link three</a></li>
+            <li><a class="subText" href="/">Projects</a></li>
+            <li><a class="subText" href="/">Contact Me</a></li>
+            <li><a class="subText" href="/">Experience</a></li>
           </ul>
         </div>
       </div>
@@ -28,10 +30,9 @@
         <div class="heroSection">
           <div class="heroContent">
             <div class="leftHero">
-              <h1 class="heroText">This website is awesome</h1>
+              <h1 class="heroText">Alexander Stevens</h1>
               <div class="subText">
-                This website has some subtext that goes here under the main
-                title. Its a smaller font and the color is lower contrast
+                Intermediate Developer with over a year of experience, specializing in Javascript libraries such as React and Angular, Strong fundamentals in Node.js. Worked on website and mobile app codebases in open-source format.
               </div>
               <button class="heroButton">Sign Up</button>
             </div>
@@ -44,27 +45,23 @@
     </div>
 
     <!--Section Two Start  -->
-    <div class="sectionTwo">
-      <h2 class="headerTwo">Some random information</h2>
-      <div class="container">
-        <div class="info">
-          <img src="./images/barberry.png" />
-          <div class="text">Test 1</div>
-        </div>
-        <div class="info">
-          <img src="./images/chilli.png" />
-          <div class="text">Test 2</div>
-        </div>
-        <div class="info">
-          <img src="./images/pepper.png" />
-          <div class="text">Test 3</div>
-        </div>
-        <div class="info">
-          <img src="./images/saffron.png" />
-          <div class="text">Test 4</div>
-        </div>
-      </div>
+    <section aria-label="Newest Photos">
+     <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
+        <ul data-slides>
+            <li class="slide" data-active>
+                 <img src="/images/diyar-shahbaz-ugmnHEKgeo0-unsplash (1).jpg" alt="Beautiful Image">
+                </li>
+            <li class="slide">
+                  <img src="/images/gaspar-zaldo-Wj7oyYyb3XA-unsplash (1).jpg" alt="Beautiful Image">
+             </li>
+             <li class="slide">
+                <img src="/images/tufis-alexandru-n0F8TzgMyGo-unsplash (1).jpg" alt="Beautiful Image">
+            </li>
+        </ul>
+        <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
     </div>
+    </section>
 
     <!--Section Three Start  -->
     <div class="sectionThree">
@@ -75,19 +72,19 @@
     <div class="sectionFour">
       <div class="callAction">
         <div class="actionLeft">
-          <div class="actionHeader">Call to action! It's time!</div>
+          <div class="actionHeader">Get in Contact</div>
           <div class="actionSubtext">
-            Sign up for our product by clicking that button right over there!
+            Reach Out to me with business inquiries!
           </div>
         </div>
         <div class="buttonContainer">
-          <button class="actionButton">Sign up</button>
+          <button class="actionButton">Contact Me</button>
         </div>
       </div>
     </div>
     <!-- footer  -->
     <div class="footer">
-      <span class="subText">Copyright &copy; AstevensAi 2024</span>
+      <span class="subText">Copyright &copy; Alexander Stevens 2024</span>
     </div>
   </body>
 </html>
